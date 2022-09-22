@@ -4,8 +4,11 @@
 #include <execinfo.h>
 
 #define PRINT_TRACE
+ 
 void print_trace();
 
+//Following implementations of hooks are based on 
+// https://www.gnu.org/savannah-checkouts/gnu/libc/manual/html_node/Hooks-for-Malloc.html
 static malloc_hook_t old_malloc_hook;
 static free_hook_t old_free_hook;
 static realloc_hook_t old_realloc_hook;
