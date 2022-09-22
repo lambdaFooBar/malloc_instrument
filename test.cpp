@@ -3,11 +3,7 @@
 #include "MyArray.h"
 #include "hooks.h"
 
-//Instrument malloc et al hooks (works if using glib)
-//Refer to https://www.gnu.org/savannah-checkouts/gnu/libc/manual/html_node/Hooks-for-Malloc.html
-
-
-
+//Instrument malloc et al hooks (works if using glibc)
 
 int main() {
     init_hook();
